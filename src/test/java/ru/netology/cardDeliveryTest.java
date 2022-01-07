@@ -29,17 +29,9 @@ class CardDeliveryTest {
     Configuration.holdBrowserOpen = true;
         open("http:localhost:9999");
         $$("[data-test-id=city] input").last().setValue("Москва");
-        //$$("[data-test-id=date] input").last().setValue("10.01.2022");
         $$("[data-test-id=name] input").last().setValue("Иванов Иван");
         $$("[data-test-id=phone] input").last().setValue("+79101010100");
          $("[data-test-id=agreement]").click();
-
-        //$$(".tab-item").find(exactText("По номеру счета")).click();
-        //SelenideElement block = $("[data-testid='registration']");
-        //$$("[name='number']").last().setValue("4055 0100 0123 4613 8564");
-
         $$("button").find(exactText("Забронировать")).click();
-        //$(withText("Успешно! Встреча успешно забронирована на 10.01.2022")).shouldBe(visible, Duration.ofSeconds(15));
-        //$(byText("Личный кабинет")).shouldBe(visible, Duration.ofSeconds(5));
-        }
+              }
         }
